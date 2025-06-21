@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: green;
+}
+
+a{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 4px;
+}
+
+.tool-card{
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+.tool-card h3{
+    margin: 0;
+    color: #333;
+}
+
+.category{
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.rent-btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.filters{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select{
+    padding: 8px;
+    font-size: 1em;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.delete-btn, .clear-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.clear-btn{
+    margin-bottom: 20px;
+    background-color: #cc0000;
+}
+
+@media (max-width: 768px) {
+    body{
+        padding: 10px;
+    }
+
+    .filters{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filters input{
+        width: 96%;
+    }
+
+    .filters select{
+        width: 100%;
+    }
+
+    .tool-card{
+        padding: 12px;
+        font-size: 0.95em;
+    }
+
+    .rent-btn , .delete-btn , .clear-btn{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    h1, h3{
+        font-size: 1.2em;
+    }
+}
